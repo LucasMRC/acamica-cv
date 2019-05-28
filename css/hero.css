@@ -1,0 +1,92 @@
+/* ================= */
+/*        Hero       */
+/* ================= */
+
+section.hero {
+	position: relative;
+	height: calc(100vh - 2rem);
+	background: url("../imgs/hero.jpg") center/cover no-repeat;
+}
+
+section.hero input {
+	display: none;
+}
+
+section.hero div.lucas * {
+	color: #fefedf;
+}
+
+section.hero div.lucas {
+	position: absolute;
+	z-index: 1000;
+	top: 4rem;
+	left: 14rem;
+	text-align: center;
+	transition: left ease-in-out 1s, transform ease-in-out 1s;
+}
+
+section.hero input:checked + label div.lucas {
+	left: 0;
+	transform: scale(0.7) translateY(-15%);
+}
+
+div.lucas div.img-container {
+	cursor: pointer;
+	width: 15rem;
+	height: 15rem;
+	margin: 0 auto;
+	background: url(../imgs/lucas.jpg) center/cover no-repeat;
+	border: 0.5rem solid #ffffff59;
+	border-radius: 11rem;
+	box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
+	transition: transform cubic-bezier(0.26, 1.05, 1, 1) 1s,
+		box-shadow cubic-bezier(0.26, 1.05, 1, 1) 1s,
+		background cubic-bezier(0.26, 1.05, 1, 1) 1.5s;
+}
+
+div.lucas div.img-container:hover,
+section.hero input:checked + label div.lucas div.img-container {
+	transform: scale(1.1);
+	box-shadow: 0.1rem 0.1rem 2rem 0.1rem #000;
+	background: url(../imgs/foto-lucas2.jpg) center/cover no-repeat;
+	filter: sepia(100%);
+}
+
+div.lucas h1 {
+	font-size: 3rem;
+	font-family: "Caveat", cursive;
+}
+
+div.lucas h2 {
+	font-size: 1.5rem;
+}
+
+section.hero div.my-info {
+	position: absolute;
+	top: 5rem;
+	left: 22rem;
+	padding: 1rem;
+	border-radius: 1.3rem;
+	background: #fefedf;
+	opacity: 0;
+	transition: opacity ease-in 1.5s;
+	box-shadow: 1rem 1rem 0.5rem 0rem;
+}
+
+section.hero input:checked + label .my-info {
+	opacity: 0.5;
+}
+
+div.my-info ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+section.hero ul li {
+	margin: 1rem;
+}
+
+.cursive {
+	font-family: "Caveat", cursive;
+	font-size: 1.5rem;
+}

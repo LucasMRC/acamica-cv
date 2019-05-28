@@ -1,0 +1,92 @@
+/* ================= */
+/* Sección Formación */
+/* ================= */
+
+section.training {
+	padding: 0 4rem;
+	overflow: hidden;
+}
+
+section.training h2.title {
+	color: #008f7a;
+}
+
+div.course-group {
+	float: left;
+	width: calc(100% / 3);
+}
+
+div.training-block {
+	position: relative;
+}
+
+div.training-block div.img-course {
+	width: 25rem;
+	height: 17rem;
+	position: relative;
+	margin-bottom: 2rem;
+	border-radius: 0.5rem;
+	background-color: #fff;
+	overflow: hidden;
+	transform: scale(0.7) rotate(18deg);
+	box-shadow: 0.1rem 0.1rem 0.5rem 0;
+	transition: transform cubic-bezier(0.26, 1.05, 1, 1) 0.5s;
+}
+
+div.training-block:hover div.img-course {
+	transform: none;
+	box-shadow: 0.1rem 0.1rem 2rem 0;
+}
+
+div.training-block div.img-course img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 110%;
+	transform: translate(-50%, -50%);
+}
+
+div.training-block div.info-course {
+	width: 25rem;
+	height: 17rem;
+	position: absolute;
+	background: rgb(78, 78, 78);
+	background: -webkit-linear-gradient(
+		60deg,
+		rgba(78, 78, 78, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	background: -o-linear-gradient(
+		60deg,
+		rgba(78, 78, 78, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	background: linear-gradient(
+		150deg,
+		rgba(78, 78, 78, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	box-sizing: border-box;
+	opacity: 0;
+	top: 0;
+	transform: scale(0.7) rotate(18deg);
+	transition: transform cubic-bezier(0.26, 1.05, 1, 1) 0.5s,
+		opacity cubic-bezier(0.26, 1.05, 1, 1) 0.5s;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	color: white;
+}
+
+div.training-block:hover div.info-course {
+	transform: none;
+	opacity: 0.9;
+}
+
+div.info-course h2,
+div.info-course span.author {
+	font-weight: 700;
+}
+
+div.info-course h2 {
+	font-size: 1.5rem;
+}

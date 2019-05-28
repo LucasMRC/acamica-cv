@@ -1,0 +1,104 @@
+/* ================= */
+/* Sección Portfolio */
+/* ================= */
+
+section.portfolio {
+	background: url(../imgs/background.jpg) center/cover no-repeat;
+	padding: 2rem 0;
+	overflow: hidden;
+	position: relative;
+}
+
+section.portfolio h2.title {
+	text-align: left;
+	margin: 0 5rem;
+	color: #64543c;
+	transform: rotate(-4deg);
+	transform-origin: 0%;
+}
+
+div.portfolio-wrapper {
+	width: 26rem;
+	height: 26rem;
+	margin: 3rem auto;
+	position: relative;
+	border-radius: 50%;
+}
+
+div.portfolio-image {
+	width: 8rem;
+	height: 8rem;
+	cursor: pointer;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1000;
+	top: 50%;
+	left: 50%;
+	box-shadow: inset 0.1rem 0.1rem 2rem;
+	filter: none;
+	transition: filter linear 200ms;
+}
+
+div.portfolio-image:hover {
+	filter: sepia(80%);
+}
+
+.first-img {
+	background: url(../imgs/portfolio/ciudad-zombie.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(270deg) translate(13rem)
+		rotate(-270deg);
+}
+.second-img {
+	background: url(../imgs/portfolio/cv.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(230deg) translate(13rem)
+		rotate(-230deg);
+}
+.third-img {
+	background: url(../imgs/portfolio/encuestados.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(190deg) translate(13rem)
+		rotate(-190deg);
+}
+.fourth-img {
+	background: url(../imgs/portfolio/mapa-interactivo.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(150deg) translate(13rem)
+		rotate(-150deg);
+}
+.fifth-img {
+	background: url(../imgs/portfolio/peli-vs-peli.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(110deg) translate(13rem)
+		rotate(-110deg);
+}
+.sixth-img {
+	background: url(../imgs/portfolio/pixel-art.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(70deg) translate(13rem) rotate(-70deg);
+}
+.seventh-img {
+	background: url(../imgs/portfolio/que-veo.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(30deg) translate(13rem) rotate(-30deg);
+}
+.eighth-img {
+	background: url(../imgs/portfolio/rompecabezas.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(-10deg) translate(13rem) rotate(10deg);
+}
+.ninth-img {
+	background: url(../imgs/portfolio/recargado.png) center/cover no-repeat;
+	transform: translate(-50%, -50%) rotate(-50deg) translate(13rem) rotate(50deg);
+}
+
+h3.portfolio-label {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #64543c;
+	opacity: 0;
+	transition: opacity ease-in 500ms;
+}
+
+div.portfolio-image:hover + h3.portfolio-label {
+	opacity: 1;
+}

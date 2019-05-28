@@ -1,0 +1,132 @@
+/* =================== */
+/* Sección experience */
+/* =================== */
+
+section.experience {
+	padding: 1rem;
+	width: 90%;
+	margin: 0 auto 2rem;
+	background: rgb(30, 95, 32);
+	background: -webkit-linear-gradient(
+		60deg,
+		rgba(30, 95, 32, 1) 0%,
+		rgba(24, 59, 25, 1) 48%,
+		rgba(30, 95, 32, 1) 100%
+	);
+	background: -o-linear-gradient(
+		60deg,
+		rgba(30, 95, 32, 1) 0%,
+		rgba(24, 59, 25, 1) 48%,
+		rgba(30, 95, 32, 1) 100%
+	);
+	background: linear-gradient(
+		150deg,
+		rgba(30, 95, 32, 1) 0%,
+		rgba(24, 59, 25, 1) 48%,
+		rgba(30, 95, 32, 1) 100%
+	);
+	border-radius: 2rem;
+	overflow: hidden;
+	box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem;
+}
+
+section.experience h2.title,
+section.experience > p {
+	color: #fefedf;
+}
+
+section.experience h2.title {
+	margin-bottom: 0;
+}
+
+section.experience > p {
+	text-align: center;
+	margin: 0 0 2rem;
+}
+
+div.exp-group {
+	float: left;
+	width: calc(100% / 3);
+}
+
+div.experience-block {
+	text-align: center;
+	margin-bottom: 5.5rem;
+	position: relative;
+}
+
+div.experience-block input {
+	display: none;
+}
+
+label.exp-icon i {
+	font-size: 9rem;
+	color: #fefedf;
+	cursor: pointer;
+}
+
+div.progress-container {
+	position: absolute;
+	background: white;
+	bottom: -1.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 1.5rem;
+	border-radius: 0.3rem;
+	width: 33.3%;
+}
+
+div.experience-block div.progress {
+	color: #1e5f20;
+	font-weight: 700;
+	height: 1.5rem;
+	border-radius: 0.3rem;
+	position: absolute;
+}
+
+div.experience-block div.progress:nth-of-type(odd) {
+	width: 100%;
+	z-index: 1000;
+	background-color: #fefedf;
+}
+
+div.experience-block div.progress:nth-of-type(even) {
+	z-index: 2000;
+	width: 0;
+	background-color: orange;
+	opacity: 0.7;
+	transition: width cubic-bezier(0.26, 1.05, 1, 1) 1s;
+}
+
+div.experience-block
+	input:checked
+	~ div.progress-container
+	> div.progress.html {
+	width: calc((100% / 6) * 5);
+}
+
+div.experience-block input:checked ~ div.progress-container > div.progress.css {
+	width: calc((100% / 4) * 3);
+}
+
+div.experience-block
+	input:checked
+	~ div.progress-container
+	> div.progress.bootstrap {
+	width: calc(100% / 3);
+}
+
+div.experience-block input:checked ~ div.progress-container > div.progress.js {
+	width: calc((100% / 4) * 3);
+}
+
+div.experience-block
+	input:checked
+	~ div.progress-container
+	> div.progress.node {
+	width: calc(100% / 2);
+}
+
+div.experience-block input:checked ~ div.progress-container > div.progress.git {
+	width: calc((100% / 3) * 2);
+}
