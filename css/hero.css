@@ -5,7 +5,7 @@
 section.hero {
 	position: relative;
 	height: calc(100vh - 2rem);
-	background: url("../imgs/hero.jpg") center/cover no-repeat;
+	background: url('../imgs/hero.jpg') center/cover no-repeat;
 }
 
 section.hero input {
@@ -22,12 +22,16 @@ section.hero div.lucas {
 	top: 4rem;
 	left: 14rem;
 	text-align: center;
-	transition: left ease-in-out 1s, transform ease-in-out 1s;
+	-webkit-transition: ease-in-out 1s;
+		 -o-transition: ease-in-out 1s;
+			transition: ease-in-out 1s;
 }
 
 section.hero input:checked + label div.lucas {
 	left: 0;
-	transform: scale(0.7) translateY(-15%);
+	-webkit-transform: scale(0.7) translateY(-15%);
+		-ms-transform: scale(0.7) translateY(-15%);
+			transform: scale(0.7) translateY(-15%);
 }
 
 div.lucas div.img-container {
@@ -38,23 +42,28 @@ div.lucas div.img-container {
 	background: url(../imgs/lucas.jpg) center/cover no-repeat;
 	border: 0.5rem solid #ffffff59;
 	border-radius: 11rem;
-	box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
-	transition: transform cubic-bezier(0.26, 1.05, 1, 1) 1s,
-		box-shadow cubic-bezier(0.26, 1.05, 1, 1) 1s,
-		background cubic-bezier(0.26, 1.05, 1, 1) 1.5s;
+	-webkit-box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
+			box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
 }
 
 div.lucas div.img-container:hover,
 section.hero input:checked + label div.lucas div.img-container {
-	transform: scale(1.1);
-	box-shadow: 0.1rem 0.1rem 2rem 0.1rem #000;
+	-webkit-transition: ease-in-out 1s;
+		 -o-transition: ease-in-out 1s;
+			transition: ease-in-out 1s;
+	-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+			transform: scale(1.1);
+	-webkit-box-shadow: 0.1rem 0.1rem 2rem 0.1rem #000;
+			box-shadow: 0.1rem 0.1rem 2rem 0.1rem #000;
 	background: url(../imgs/foto-lucas2.jpg) center/cover no-repeat;
-	filter: sepia(100%);
+	-webkit-filter: sepia(100%);
+			filter: sepia(100%);
 }
 
 div.lucas h1 {
 	font-size: 3rem;
-	font-family: "Caveat", cursive;
+	font-family: 'Caveat', cursive;
 }
 
 div.lucas h2 {
@@ -69,8 +78,11 @@ section.hero div.my-info {
 	border-radius: 1.3rem;
 	background: #fefedf;
 	opacity: 0;
-	transition: opacity ease-in 1.5s;
-	box-shadow: 1rem 1rem 0.5rem 0rem;
+	-webkit-box-shadow: 1rem 1rem 0.5rem 0rem;
+			box-shadow: 1rem 1rem 0.5rem 0rem;
+	-webkit-transition: ease-in-out 1.5s;
+		 -o-transition: ease-in-out 1.5s;
+			transition: ease-in-out 1.5s;
 }
 
 section.hero input:checked + label .my-info {
@@ -87,6 +99,66 @@ section.hero ul li {
 }
 
 .cursive {
-	font-family: "Caveat", cursive;
+	font-family: 'Caveat', cursive;
 	font-size: 1.5rem;
+}
+/* =================== */
+/* Reglas para Celular */
+/* =================== */
+
+@media screen and (max-width: 480px) {
+	section.hero {
+		height: calc(42vh - 2rem);
+	}
+
+	section.hero div.lucas {
+		top: 0.5rem;
+		left: 0.4rem;
+		transition: none;
+	}
+
+	section.hero input:checked + label div.lucas {
+		left: 0.4rem;
+	}
+
+	div.lucas div.img-container {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	div.lucas div.img-container:hover {
+		box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
+		background: url(../imgs/lucas.jpg) center/cover no-repeat;
+		filter: none;
+	}
+
+	section.hero input:checked + label div.lucas,
+	div.lucas div.img-container:hover,
+	section.hero input:checked + label div.lucas div.img-container {
+		transition: none;
+		transform: none;
+	}
+
+	div.lucas h1 {
+		font-size: 1rem;
+	}
+
+	div.lucas h2 {
+		font-size: 1rem;
+	}
+
+	section.hero div.my-info {
+		left: 10rem;
+		opacity: 1;
+	}
+
+	section.hero ul li {
+		margin: 0 1rem;
+		font-size: 0.7rem;
+	}
+
+	section.hero ul li span {
+		display: block;
+		font-size: 0.7rem;
+	}
 }
