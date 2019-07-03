@@ -1,0 +1,121 @@
+/* ================= */
+/* Sección Formación */
+/* ================= */
+
+section.training {
+	padding: 0 4rem;
+	overflow: hidden;
+}
+
+section.training h2.title {
+	color: #008f7a;
+}
+
+div.course-group {
+	float: left;
+	width: calc(100% / 3);
+}
+
+div.training-block {
+	position: relative;
+}
+
+div.training-block div.img-course {
+	width: 25rem;
+	height: 17rem;
+	position: relative;
+	margin-bottom: 2rem;
+	border-radius: 0.5rem;
+	background-color: #fff;
+	overflow: hidden;
+	-webkit-transform: scale(0.7) rotate(18deg);
+	    -ms-transform: scale(0.7) rotate(18deg);
+	        transform: scale(0.7) rotate(18deg);
+	-webkit-box-shadow: 0.1rem 0.1rem 0.5rem 0;
+	        box-shadow: 0.1rem 0.1rem 0.5rem 0;
+	-webkit-transition: -webkit-transform ease-in-out 0.5s;
+			transition: -webkit-transform ease-in-out 0.5s;
+		 -o-transition: transform ease-in-out 0.5s;
+			transition: transform ease-in-out 0.5s;
+			transition: transform ease-in-out 0.5s, 
+						-webkit-transform ease-in-out 0.5s;
+}
+
+div.training-block:hover div.img-course {
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;
+	-webkit-box-shadow: 0.1rem 0.1rem 2rem 0;
+	        box-shadow: 0.1rem 0.1rem 2rem 0;
+}
+
+div.training-block div.img-course img {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 110%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+div.training-block div.info-course {
+	width: 25rem;
+	height: 17rem;
+	position: absolute;
+	background: rgb(78, 78, 78);
+	background: -webkit-linear-gradient(
+		60deg,
+		rgba(78, 78, 78, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	background: -o-linear-gradient(
+		60deg,
+		rgba(78, 78, 78, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		300deg,
+		rgba(78, 78, 78, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	background: -o-linear-gradient(
+		300deg,
+		rgba(78, 78, 78, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	background: linear-gradient(
+		150deg,
+		rgba(78, 78, 78, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	opacity: 0;
+	top: 0;
+	-webkit-transform: scale(0.7) rotate(18deg);
+	    -ms-transform: scale(0.7) rotate(18deg);
+	        transform: scale(0.7) rotate(18deg);
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	color: white;
+	-webkit-transition: ease-in-out 0.5s;
+		 -o-transition: ease-in-out 0.5s;
+			transition: ease-in-out 0.5s;
+}
+
+div.training-block:hover div.info-course {
+	-webkit-transform: none;
+	    -ms-transform: none;
+	        transform: none;
+	opacity: 0.9;
+}
+
+div.info-course h2,
+div.info-course span.author {
+	font-weight: 700;
+}
+
+div.info-course h2 {
+	font-size: 1.5rem;
+}

@@ -1,0 +1,65 @@
+/* ================= */
+/*       Navbar      */
+/* ================= */
+
+div.nav-background {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	background-color: #000;
+	height: 7rem;
+}
+
+div.center-logo {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+nav {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 6000;
+	top: 0;
+	background-color: #00000099;
+}
+
+nav ul.menu {
+	margin: 0;
+	list-style-type: none;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+nav ul.menu li {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+	padding: 0 1rem;
+	position: relative;
+}
+
+nav ul.menu li a {
+	text-decoration: none;
+}
+
+nav ul.menu hr.underline {
+	position: absolute;
+	top: 1.5rem;
+	width: 0;
+	border: 0;
+	border-top: 1px solid #fff;
+	margin: 0;
+	opacity: 0;
+	-webkit-transition: opacity ease-in-out 50ms, width ease-in-out 150ms;
+		 -o-transition: opacity ease-in-out 50ms, width ease-in-out 150ms;
+			transition: opacity ease-in-out 50ms, width ease-in-out 150ms;
+}
+
+nav ul.menu li:hover hr.underline {
+	opacity: 1;
+	width: 4rem;
+}

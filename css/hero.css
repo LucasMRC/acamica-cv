@@ -1,0 +1,164 @@
+/* ================= */
+/*        Hero       */
+/* ================= */
+
+section.hero {
+	position: relative;
+	height: calc(100vh - 2rem);
+	background: url('https://lucasmrc.github.io/acamica-cv/imgs/hero.jpg') center/cover no-repeat;
+}
+
+section.hero input {
+	display: none;
+}
+
+section.hero div.lucas * {
+	color: #fefedf;
+}
+
+section.hero div.lucas {
+	position: absolute;
+	z-index: 1000;
+	top: 4rem;
+	left: 14rem;
+	text-align: center;
+	-webkit-transition: ease-in-out 1s;
+		 -o-transition: ease-in-out 1s;
+			transition: ease-in-out 1s;
+}
+
+section.hero input:checked + label div.lucas {
+	left: 0;
+	-webkit-transform: scale(0.7) translateY(-15%);
+		-ms-transform: scale(0.7) translateY(-15%);
+			transform: scale(0.7) translateY(-15%);
+}
+
+div.lucas div.img-container {
+	cursor: pointer;
+	width: 15rem;
+	height: 15rem;
+	margin: 0 auto;
+	background: url(https://lucasmrc.github.io/acamica-cv/imgs/lucas.jpg) center/cover no-repeat;
+	border: 0.5rem solid #ffffff59;
+	border-radius: 11rem;
+	-webkit-box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
+			box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
+	-webkit-transition: ease-in-out 1s;
+		 -o-transition: ease-in-out 1s;
+			transition: ease-in-out 1s;
+}
+
+div.lucas div.img-container:hover,
+section.hero input:checked + label div.lucas div.img-container {
+	-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+			transform: scale(1.1);
+	-webkit-box-shadow: 0.1rem 0.1rem 2rem 0.1rem #000;
+			box-shadow: 0.1rem 0.1rem 2rem 0.1rem #000;
+	background: url(https://lucasmrc.github.io/acamica-cv/imgs/foto-lucas2.jpg) center/cover no-repeat;
+	-webkit-filter: sepia(100%);
+			filter: sepia(100%);
+}
+
+div.lucas h1 {
+	font-size: 3rem;
+	font-family: 'Caveat', cursive;
+}
+
+div.lucas h2 {
+	font-size: 1.5rem;
+}
+
+section.hero div.my-info {
+	position: absolute;
+	top: 5rem;
+	left: 22rem;
+	padding: 1rem;
+	border-radius: 1.3rem;
+	background: #fefedf;
+	opacity: 0;
+	-webkit-box-shadow: 1rem 1rem 0.5rem 0rem;
+			box-shadow: 1rem 1rem 0.5rem 0rem;
+	-webkit-transition: ease-in-out 1.5s;
+		 -o-transition: ease-in-out 1.5s;
+			transition: ease-in-out 1.5s;
+}
+
+section.hero input:checked + label .my-info {
+	opacity: 0.5;
+}
+
+div.my-info ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+section.hero ul li {
+	margin: 1rem;
+}
+
+.cursive {
+	font-family: 'Caveat', cursive;
+	font-size: 1.5rem;
+}
+/* =================== */
+/* Reglas para Celular */
+/* =================== */
+
+@media screen and (max-width: 480px) {
+	section.hero {
+		height: calc(42vh - 2rem);
+	}
+
+	section.hero div.lucas {
+		top: 0.5rem;
+		left: 0.4rem;
+		transition: none;
+	}
+
+	section.hero input:checked + label div.lucas {
+		left: 0.4rem;
+	}
+
+	div.lucas div.img-container {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	div.lucas div.img-container:hover {
+		box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
+		background: url(https://lucasmrc.github.io/acamica-cv/imgs/lucas.jpg) center/cover no-repeat;
+		filter: none;
+	}
+
+	section.hero input:checked + label div.lucas,
+	div.lucas div.img-container:hover,
+	section.hero input:checked + label div.lucas div.img-container {
+		transition: none;
+		transform: none;
+	}
+
+	div.lucas h1 {
+		font-size: 1rem;
+	}
+
+	div.lucas h2 {
+		font-size: 1rem;
+	}
+
+	section.hero div.my-info {
+		left: 10rem;
+		opacity: 1;
+	}
+
+	section.hero ul li {
+		margin: 0 1rem;
+		font-size: 0.7rem;
+	}
+
+	section.hero ul li span {
+		display: block;
+		font-size: 0.7rem;
+	}
+}
