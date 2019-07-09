@@ -111,8 +111,8 @@ div.experience-block div.progress:nth-of-type(even) {
 	background-color: orange;
 	opacity: 0.7;
 	-webkit-transition: width ease-in-out 1s;
-		 -o-transition: width ease-in-out 1s;
-			transition: width ease-in-out 1s;
+	     -o-transition: width ease-in-out 1s;
+		transition: width ease-in-out 1s;
 }
 
 div.experience-block
@@ -122,28 +122,28 @@ div.experience-block
 	width: calc((100% / 6) * 5);
 }
 
-div.experience-block input:checked ~ div.progress-container > div.progress.css {
-	width: calc((100% / 4) * 3);
-}
-
+div.experience-block
+	input:checked 
+	~ div.progress-container 
+	> div.progress.css,
 div.experience-block
 	input:checked
 	~ div.progress-container
-	> div.progress.bootstrap {
-	width: calc(100% / 3);
-}
-
-div.experience-block input:checked ~ div.progress-container > div.progress.js {
-	width: calc((100% / 4) * 3);
-}
-
+	> div.progress.node,
 div.experience-block
 	input:checked
 	~ div.progress-container
-	> div.progress.node {
-	width: calc(100% / 2);
+	> div.progress.bootstrap,
+div.experience-block 
+	input:checked 
+	~ div.progress-container 
+	> div.progress.js {
+	width: calc((100% / 4) * 3);
 }
 
-div.experience-block input:checked ~ div.progress-container > div.progress.git {
+div.experience-block 
+	input:checked 
+	~ div.progress-container 
+	> div.progress.git {
 	width: calc((100% / 3) * 2);
 }
