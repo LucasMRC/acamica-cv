@@ -5,7 +5,7 @@
 section.hero {
 	position: relative;
 	height: calc(100vh - 2rem);
-	background: url('https://lucasmrc.github.io/acamica-cv/imgs/hero.jpg') center/cover no-repeat;
+	background: url(../imgs/hero.jpg) center/cover no-repeat;
 }
 
 section.hero input {
@@ -39,7 +39,7 @@ div.lucas div.img-container {
 	width: 15rem;
 	height: 15rem;
 	margin: 0 auto;
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/lucas.jpg) center/cover no-repeat;
+	background: url(../imgs/lucas.jpg) center/cover no-repeat;
 	border: 0.5rem solid #ffffff59;
 	border-radius: 11rem;
 	-webkit-box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
@@ -56,7 +56,7 @@ section.hero input:checked + label div.lucas div.img-container {
 			transform: scale(1.1);
 	-webkit-box-shadow: 0.1rem 0.1rem 2rem 0.1rem #000;
 			box-shadow: 0.1rem 0.1rem 2rem 0.1rem #000;
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/foto-lucas2.jpg) center/cover no-repeat;
+	background: url(../imgs/foto-lucas2.jpg) center/cover no-repeat;
 	-webkit-filter: sepia(100%);
 			filter: sepia(100%);
 }
@@ -117,6 +117,10 @@ section.hero ul li {
 		transition: none;
 	}
 
+	.my-info {
+		display: none;
+	}
+
 	section.hero input:checked + label div.lucas {
 		left: 0.4rem;
 	}
@@ -128,7 +132,7 @@ section.hero ul li {
 
 	div.lucas div.img-container:hover {
 		box-shadow: 0.1rem 0.1rem 0.9rem 0.1rem #000;
-		background: url(https://lucasmrc.github.io/acamica-cv/imgs/lucas.jpg) center/cover no-repeat;
+		background: url(../imgs/lucas.jpg) center/cover no-repeat;
 		filter: none;
 	}
 

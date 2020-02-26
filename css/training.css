@@ -4,24 +4,21 @@
 
 section.training {
 	padding: 0 4rem;
-	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 section.training h2.title {
 	color: #008f7a;
 }
 
-div.course-group {
-	float: left;
-	width: calc(100% / 3);
-}
-
 div.training-block {
 	position: relative;
+	width: 18rem;
 }
 
 div.training-block div.img-course {
-	width: 25rem;
+	width: 18rem;
 	height: 17rem;
 	position: relative;
 	margin-bottom: 2rem;
@@ -60,7 +57,7 @@ div.training-block div.img-course img {
 }
 
 div.training-block div.info-course {
-	width: 25rem;
+	width: 18rem;
 	height: 17rem;
 	position: absolute;
 	background: rgb(78, 78, 78);
@@ -118,4 +115,23 @@ div.info-course span.author {
 
 div.info-course h2 {
 	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 480px) {
+
+	div.training-block div.img-course {
+		width: 18rem;
+	}
+
+	section.training {
+		padding: 0 2rem;
+	}
+
+	div.training-block div.info-course {
+		width: 18rem;
+	}
+
+	div.experience-block {
+		left: 10px;
+	}
 }

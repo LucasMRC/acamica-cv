@@ -1,5 +1,4 @@
 * {
-	letter-spacing: 0.1rem;
 	font: 300 1.05rem/1.5rem "Quicksand", sans-serif;
 }
 html {
@@ -37,4 +36,7 @@ footer p {
     font-weight: 100;
 	font-size: 1.2rem;
 	line-height: 2rem;
+}
+
+@media screen and (max-width: 480px) {
 }

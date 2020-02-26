@@ -3,7 +3,7 @@
 /* ================= */
 
 section.portfolio {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/background.jpg) center/cover no-repeat;
+	background: url(../imgs/background.jpg) center/cover no-repeat;
 	padding: 2rem 0;
 	overflow: hidden;
 	position: relative;
@@ -87,7 +87,7 @@ section.portfolio h2.title {
 /* Íconos del portfolio */
 
 .first-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/ciudad-zombie.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/zenrise.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(270deg) 
 						translate(13rem)
@@ -102,7 +102,7 @@ section.portfolio h2.title {
 }
 
 .second-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/cv.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/cv.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(230deg) 
 						translate(13rem)
@@ -118,7 +118,7 @@ section.portfolio h2.title {
 }
 
 .third-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/encuestados.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/encuestados.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(190deg) 
 						translate(13rem)
@@ -132,7 +132,7 @@ section.portfolio h2.title {
 }
 
 .fourth-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/mapa-interactivo.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/ciudad-zombie.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(150deg) 
 						translate(13rem)
@@ -146,7 +146,7 @@ section.portfolio h2.title {
 }
 
 .fifth-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/peli-vs-peli.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/peli-vs-peli.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(110deg) 
 						translate(13rem)
@@ -162,7 +162,7 @@ section.portfolio h2.title {
 }
 
 .sixth-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/pixel-art.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/pixel-art.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(70deg) 
 						translate(13rem) 
@@ -178,7 +178,7 @@ section.portfolio h2.title {
 }
 
 .seventh-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/que-veo.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/que-veo.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(30deg) 
 						translate(13rem) 
@@ -194,7 +194,7 @@ section.portfolio h2.title {
 }
 
 .eighth-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/rompecabezas.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/rompecabezas.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(-10deg) 
 						translate(13rem) 
@@ -210,7 +210,7 @@ section.portfolio h2.title {
 }
 
 .ninth-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/recargado.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/recargado.png) center/cover no-repeat;
 	-webkit-transform: 	translate(-50%, -50%) 
 						rotate(-50deg) 
 						translate(13rem) 
@@ -250,39 +250,39 @@ h3.portfolio-label {
 /* Imágenes de la Preview */
 
 .first-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/zombie.jpg) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/zombie.jpg) center/cover no-repeat;
 }
 
 .second-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/cv.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/cv.png) center/cover no-repeat;
 }
 
 .third-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/encuestados.jpg) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/encuestados.jpg) center/cover no-repeat;
 }
 
 .fourth-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/mapa.jpg) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/mapa.jpg) center/cover no-repeat;
 }
 
 .fifth-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/peli.jpg) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/peli.jpg) center/cover no-repeat;
 }
 
 .sixth-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/pixel-art.png) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/pixel-art.png) center/cover no-repeat;
 }
 
 .seventh-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/que-veo.jpg) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/que-veo.jpg) center/cover no-repeat;
 }
 
 .eighth-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/rompecabezas.jpg) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/rompecabezas.jpg) center/cover no-repeat;
 }
 
 .ninth-img ~ .preview-img {
-	background: url(https://lucasmrc.github.io/acamica-cv/imgs/portfolio/preview/recargado.jpg) center/cover no-repeat;
+	background: url(../imgs/portfolio/preview/recargado.jpg) center/cover no-repeat;
 }
 
 .portfolio-image:hover ~ .preview-img {
