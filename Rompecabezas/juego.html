@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>BMO Arcade</title>
+	<link rel="stylesheet" href="css/juego.css">
+</head>
+<body>
+	<div class="col-40">
+		<div id="titulo">
+			<h3>Rompecabezas</h3>
+		</div>
+		<div id="instrucciones">
+			<p>Recrea la imagen que ves a continuación utilizando las flechas para desplazar las piezas.</p>
+			<ul id="lista-instrucciones"><!-- Instrucciones van aquí --></ul>
+		</div>
+		<div id="objetivo">
+			<div class="texto-centrado">
+				<img class="final-img" src="./images/final.jpg" alt="Imagen Final">
+			</div>
+			<button disabled id="start">Elige el modo</button>
+			<div id="ultimo-mov">
+				<div id="flecha" class="texto-centrado">
+				</div>
+			</div>
+		</div>
+		<div id="botonera">
+			<button id="easy">Fácil</button>
+			<button id="medium">Difícil</button>
+			<button id="hard">Héroe</button>
+		</div>
+	
+	</div>
+	<div class="col-60"></div>
+	<div id="modulo">
+		<div class="centrado">
+			<h1>GANASTE!</h1>
+			<button onclick={hideModule()} id="ganador">X</button>
+		</div>
+	</div>
+	<div id="footer">
+	
+	</div>
+	<script src="js/juego.js"></script>
+	<script src="js/gameLevels.js"></script>
+</body>
+</html>

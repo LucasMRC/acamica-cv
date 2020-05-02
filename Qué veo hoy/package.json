@@ -1,0 +1,19 @@
+{
+  "name": "que-veo-hoy",
+  "version": "1.0.0",
+  "description": "Proyecto de Acamica",
+  "main": "servidor.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon servidor/servidor.js"
+  },
+  "author": "Lucas Reyna Cordoba",
+  "license": "ISC"
+}
